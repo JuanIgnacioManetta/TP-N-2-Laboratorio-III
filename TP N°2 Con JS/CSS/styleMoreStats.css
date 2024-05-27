@@ -1,0 +1,263 @@
+:root {
+  --color-red: #e10600;
+  --color-red-dark: #9f1007;
+  --color-white: #f3f3f3;
+  --color-black: #090909;
+  --color-grey: #bcb8b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron, sans-serif;
+  background-color: var(--color-white);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--color-red);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  letter-spacing: 3px;
+  text-shadow: -2px -2px 0 var(--color-black), 2px -2px 0 var(--color-black),
+    -2px 2px 0 var(--color-black), 2px 2px 0 var(--color-black);
+  background-color: var(--color-red);
+  font-size: 2.5rem;
+}
+
+/* Nombre Piloto */
+
+.pilot-name {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pilot-name p {
+  padding: 0 10px;
+  color: var(--color-black);
+  font-size: 3rem;
+}
+
+/* Stats */
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20vw;
+}
+
+.stats-23-title,
+.stats-24-title {
+  text-align: center;
+}
+.stats-23,
+.stats-24 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border: 1px solid black;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  height: 100%;
+}
+/* Podio */
+
+.second {
+  width: 35px;
+  height: 65px;
+  background-color: #c0c0c0;
+  margin: 0 0 0 10px;
+}
+.second p {
+  text-align: center;
+}
+
+.first {
+  width: 35px;
+  height: 95px;
+  background-color: #ffd700;
+  margin: 0 10px;
+}
+.first p {
+  text-align: center;
+}
+
+.third {
+  width: 35px;
+  height: 45px;
+  background-color: #cd7f32;
+  margin: 0 10px 0 0;
+}
+.third p {
+  text-align: center;
+}
+
+/* Stats Text */
+
+.stats-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 100px;
+  padding: 0 10px 0 0;
+}
+
+/* Imagen Piloto */
+
+.pilot-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding: 25px 0 0 0;
+  margin: auto;
+}
+.img {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .img {
+    flex-direction: column;
+  }
+  .img img {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Nombre Piloto */
+  .pilot-name {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .pilot-name p {
+    font-size: 2rem;
+  }
+
+  /* Contenedor Stats */
+
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 0 0;
+  }
+  .stats-23,
+  .stats-24 {
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .stats-23-title,
+  .stats-24-title {
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  /* Podio */
+  .podium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0 10px 0 0;
+  }
+  .second {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    width: 65px;
+    height: 35px;
+    margin: 10px 0 0 0;
+  }
+  .second p {
+    text-align: center;
+    padding: 2px;
+  }
+  .first {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+  }
+  .first p {
+    text-align: center;
+    padding: 2px;
+  }
+  .third {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 45px;
+    height: 35px;
+    margin: 0 0 10px 0;
+  }
+  .third p {
+    display: flex;
+    text-align: center;
+    padding: 2px;
+  }
+
+  /* Stast */
+
+  .stats-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 125px;
+    padding: 10px;
+  }
+
+  /* Imgenes */
+
+  .img img {
+    width: 280px;
+    height: auto;
+  }
+}

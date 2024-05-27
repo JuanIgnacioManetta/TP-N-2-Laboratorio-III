@@ -1,0 +1,361 @@
+:root {
+  --color-red: #e10600;
+  --color-red-dark: #9f1007;
+  --color-white: #f3f3f3;
+  --color-black: #090909;
+  --color-grey: #bcb8b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron, sans-serif;
+  background-color: var(--color-white);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: var(--color-red);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header h1 {
+  color: var(--color-white);
+  letter-spacing: 3px;
+  text-shadow: -2px -2px 0 var(--color-black), 2px -2px 0 var(--color-black),
+    -2px 2px 0 var(--color-black), 2px 2px 0 var(--color-black);
+  background-color: var(--color-red);
+  font-size: 2.5rem;
+}
+
+/* Pantalla de Carga */
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-top3 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-pilot-top3,
+.frame-container,
+.first-frame,
+.first-frame p,
+.second-frame,
+.second-frame p,
+.second-frame img,
+.third-frame,
+.third-frame p,
+.fourth-frame,
+.fourth-frame p,
+.fourth-frame img {
+  background-color: var(--color-grey);
+}
+
+.card-pilot-top3 {
+  width: 300px;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-black);
+  position: sticky;
+}
+
+.frame-container {
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+}
+
+.first-frame {
+  max-width: 100%;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-black);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right: 1px solid var(--color-black);
+  border-left: 1px solid var(--color-black);
+}
+
+.pilot-position {
+  font-size: 1.5rem;
+}
+
+.pilot-points {
+  background-color: var(--color-grey);
+  font-size: 1rem;
+}
+
+.second-frame {
+  padding: 0 20px 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-left: 1px solid var(--color-black);
+}
+
+.second-frame img {
+  width: 50px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.third-frame {
+  padding: 0 20px 0 20px;
+  height: 25px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--color-black);
+  border-left: 1px solid var(--color-black);
+  border-top: 1px solid var(--color-black);
+}
+
+.fourth-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+  border: 1px solid var(--color-black);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fourth-frame img {
+  padding-top: 5px;
+  width: 130px;
+  height: 130px;
+  border-bottom-right-radius: 10px;
+  object-fit: cover;
+}
+
+.pilot-number {
+  width: 125px;
+  height: 130px;
+}
+
+.fourth-frame p {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 0 0 0 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  background-color: var(--color-grey);
+}
+
+/* Contenedor del resto */
+
+.container-rest {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Colores Nombre Pilotos */
+
+.name-pilot-Red {
+  border-left: 5px solid #1e41ff;
+  padding-left: 5px;
+}
+.name-pilot-Ferrari {
+  border-left: 5px solid #dc0000;
+  padding-left: 5px;
+}
+.name-pilot-McLaren {
+  border-left: 5px solid #ff8700;
+  padding-left: 5px;
+}
+.name-pilot-Mercedes {
+  border-left: 5px solid #00d2be;
+  padding-left: 5px;
+}
+.name-pilot-Aston {
+  border-left: 5px solid #006f62;
+  padding-left: 5px;
+}
+.name-pilot-RB {
+  border-left: 5px solid #1e41ff;
+  padding-left: 5px;
+}
+.name-pilot-Haas {
+  border-left: 5px solid var(--color-black);
+  padding-left: 5px;
+}
+.name-pilot-Alpine {
+  border-left: 5px solid #d55a94;
+  padding-left: 5px;
+}
+.name-pilot-Williams {
+  border-left: 5px solid #005aff;
+  padding-left: 5px;
+}
+.name-pilot-Sauber {
+  border-left: 5px solid #52e252;
+  padding-left: 5px;
+}
+/* Colores Numeros Pilotos */
+
+.pilot-number-Red {
+  color: var(--color-red);
+  text-shadow: -2px -2px 0 #1e41ff, 2px -2px 0 #1e41ff, -2px 2px 0 #1e41ff,
+    2px 2px 0 #1e41ff;
+}
+
+.pilot-number-Ferrari {
+  color: #dc0000;
+  text-shadow: -2px -2px 0 var(--color-black), 2px -2px 0 var(--color-black),
+    -2px 2px 0 var(--color-black), 2px 2px 0 var(--color-black);
+}
+
+.pilot-number-McLaren {
+  color: #ff8700;
+  text-shadow: -2px -2px 0 #005aff, 2px -2px 0 #005aff, -2px 2px 0 #005aff,
+    2px 2px 0 #005aff;
+}
+
+.pilot-number-Mercedes {
+  color: #00d2be;
+  text-shadow: -2px -2px 0 var(--color-black), 2px -2px 0 var(--color-black),
+    -2px 2px 0 var(--color-black), 2px 2px 0 var(--color-black);
+}
+
+.pilot-number-Aston {
+  color: #006f62;
+  text-shadow: -2px -2px 0 #f3f3f3, 2px -2px 0 #f3f3f3, -2px 2px 0 #f3f3f3,
+    2px 2px 0 #f3f3f3;
+}
+
+.pilot-number-RB {
+  color: #1e41ff;
+  text-shadow: -2px -2px 0 var(--color-black), 2px -2px 0 var(--color-black),
+    -2px 2px 0 var(--color-black), 2px 2px 0 var(--color-black);
+}
+
+.pilot-number-Haas {
+  color: var(--color-black);
+  text-shadow: -2px -2px 0 var(--color-white), 2px -2px 0 var(--color-white),
+    -2px 2px 0 var(--color-white), 2px 2px 0 var(--color-white);
+}
+
+.pilot-number-Alpine {
+  color: var(--color-white);
+  text-shadow: -2px -2px 0 #d55a94, 2px -2px 0 #d55a94, -2px 2px 0 #d55a94,
+    2px 2px 0 #d55a94;
+}
+
+.pilot-number-Williams {
+  color: var(--color-white);
+  text-shadow: -2px -2px 0 #005aff, 2px -2px 0 #005aff, -2px 2px 0 #005aff,
+    2px 2px 0 #005aff;
+}
+
+.pilot-number-Sauber {
+  color: var(--color-white);
+  text-shadow: -2px -2px 0 #52e252, 2px -2px 0 #52e252, -2px 2px 0 #52e252,
+    2px 2px 0 #52e252;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-black);
+  width: 100vw;
+}
+footer p {
+  text-align: center;
+  color: var(--color-white);
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  text-shadow: -1px -2px 0 var(--color-black), 1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black);
+  background-color: var(--color-red);
+}
+
+@media (min-width: 601px) {
+  .card-pilot-top3:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  .conteiner-top3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .card-pilot-top3 {
+    scale: 0.9;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    margin-bottom: 25px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .conteiner-top3 {
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+  }
+  .container-rest {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  .card-pilot-top3 {
+    scale: 0.8;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
