@@ -27,8 +27,6 @@ body {
   align-items: center;
 }
 
-.header h1 {
-}
 
 a {
   text-decoration: none;
@@ -65,12 +63,12 @@ a {
   padding: 0 20vw;
 }
 
-.stats-23-title,
-.stats-24-title {
+.stats-old-title,
+.stats-current-title {
   text-align: center;
 }
-.stats-23,
-.stats-24 {
+.stats-old,
+.stats-current {
   display: flex;
   justify-content: center;
   align-items: end;
